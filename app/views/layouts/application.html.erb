@@ -11,11 +11,15 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="prose mx-auto">
-    <main class="container mx-auto mt-28 px-5 flex">
-    <%# <main class="flex justify-center"> %>
+  <body>
+    <%= render partial: "shared/navbar" %>
+    <div class="prose mx-auto">
+      <%= render partial: "shared/flash" %>
+      <%# <main class="flex justify-center"> %>
+      <main class="container mx-auto mt-28 px-5 flex">
+        <%= yield %>
+      </main>
 
-      <%= yield %>
-    </main>
+    </div>
   </body>
 </html>
