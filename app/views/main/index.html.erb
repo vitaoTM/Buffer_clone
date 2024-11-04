@@ -1,4 +1,8 @@
 <div class="flex justify-center">
   <h1>Welcome to Scheduled X</h1>
 
+  <% if @user %>
+    Logged in as <%= @user.email %>
+  <% end %>
+
 </div>
