@@ -64,5 +64,7 @@ group :development do
   # gem "spring"
 end
 
+# gem 'bootstrap', '~> 5.3.3'
+# gem 'dartsass-sprockets'
 
 # gem "tailwindcss-rails", "~> 3.0"
