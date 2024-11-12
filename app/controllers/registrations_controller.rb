@@ -9,7 +9,7 @@ class RegistrationsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path, notice: "Successfuly created an account! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧	"
     else
-      render :new
+      render :new, notice: "What?? "
     end
   end
 

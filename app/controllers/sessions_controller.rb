@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
       redirect_to root_path
       flash[:notice] = "Logged in Successfuly! (/￣ー￣)/~~☆’.･.･:★’.･.･:☆"
     else
-      flash[:alert] = 'Invalid login (－‸ლ)	'
       render :new
+      flash[:alert] = 'Invalid login (－‸ლ)	'
     end
   end
 
